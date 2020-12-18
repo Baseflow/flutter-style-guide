@@ -14,7 +14,7 @@ class SgeDrawer extends StatelessWidget {
         child: Column(
           children: [
             DrawerAppBar(
-              title: const Text("Menu"),
+              title: const Text('Menu'),
             ),
             Expanded(
               child: ListView(
@@ -22,13 +22,13 @@ class SgeDrawer extends StatelessWidget {
                 children: <Widget>[
                   ListTile(
                     leading: const Icon(Icons.home),
-                    title: const Text("Home"),
+                    title: const Text('Home'),
                     onTap: () => navigator.pushReplacementNamed(HomePage.routeName),
                   ),
                   if (kDebugMode)
                     ListTile(
                       leading: const Icon(Icons.style_rounded),
-                      title: const Text("Style-guide"),
+                      title: const Text('Style-guide (debug only)'),
                       onTap: () => navigator.pushReplacementNamed(StyleGuidePage.routeName),
                     ),
                 ],

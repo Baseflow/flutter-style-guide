@@ -21,11 +21,19 @@ class HomePage extends StatelessWidget {
       drawer: SgeDrawer(),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
-        child: Center(
-          child: Text(
-            'Need knowlege about which components are available for desiging/setting up this page? Open the style guide from the hamburger menu. This will only be visible when in debug mode.',
-            style: theme.textTheme.headline4,
-          ),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text(
+              'Need knowlege about the components?',
+              style: theme.textTheme.headline5,
+            ),
+            const SizedBox(height: 32.0),
+            Text(
+              'Open the style guide from the menu.',
+              style: theme.textTheme.headline5,
+            )
+          ],
         ),
       ),
     );
